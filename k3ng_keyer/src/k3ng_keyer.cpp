@@ -1385,8 +1385,41 @@ If you offer a hardware kit using this software, show your appreciation by sendi
 
 #define eeprom_magic_number 41               // you can change this number to have the unit re-initialize EEPROM
 
+#include <Arduino.h>
 #include <stdio.h>
 #include "keyer_hardware.h"
+
+void initialize_pins();
+void initialize_keyer_state();
+void initialize_potentiometer();
+void initialize_rotary_encoder();
+void initialize_default_modes();
+void initialize_watchdog();
+void initialize_ethernet_variables();
+void check_eeprom_for_initialization();
+void check_for_beacon_mode();
+void check_for_debug_modes();
+void initialize_analog_button_array();
+#if !defined(DEBUG_EEPROM_READ_SETTINGS)
+void initialize_serial_ports();
+#endif
+void initialize_ps2_keyboard();
+void initialize_usb();
+void initialize_cw_keyboard();
+void initialize_display();
+void initialize_ethernet();
+void initialize_udp();
+void initialize_web_server();
+void initialize_sd_card();
+void initialize_debug_startup();
+void check_paddles();
+void service_dit_dah_buffers();
+void service_send_buffer(byte no_print);
+void check_ptt_tail();
+void check_for_dirty_configuration();
+void service_async_eeprom_write();
+void service_sending_pins();
+void service_millis_rollover();
 
 #if defined(ARDUINO_SAM_DUE)
   #include <SPI.h>
@@ -8981,7 +9014,7 @@ void initialize_analog_button_array() {
     button_array.Add(8,5);
     button_array.Add(9,4);
 
-  #elseif defined(OPTION_DFROBOT_LCD_COMMAND_BUTTONS)
+  #elif defined(OPTION_DFROBOT_LCD_COMMAND_BUTTONS)
     button_array.Add(0,dfrobot_btnSELECT, dfrobot_btnLEFT_analog, dfrobot_btnSELECT_analog);
     button_array.Add(1,dfrobot_btnLEFT, dfrobot_btnDOWN_analog, dfrobot_btnLEFT_analog);
     button_array.Add(2,dfrobot_btnDOWN, dfrobot_btnUP_analog, dfrobot_btnDOWN_analog);
