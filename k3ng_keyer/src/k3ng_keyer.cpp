@@ -1420,6 +1420,18 @@ void check_for_dirty_configuration();
 void service_async_eeprom_write();
 void service_sending_pins();
 void service_millis_rollover();
+void clear_send_buffer();
+int paddle_pin_read(int pin_to_read);
+void write_settings_to_eeprom(int initialize_eeprom);
+void check_dit_paddle();
+void check_dah_paddle();
+void switch_to_tx_silent(byte tx);
+void loop_element_lengths(float lengths, float additional_time_ms, int speed_wpm_in);
+void tx_and_sidetone_key (int state);
+void speed_set(int wpm_set);
+void send_char(byte cw_char, byte omit_letterspace);
+void remove_from_send_buffer();
+void initialize_eeprom();
 
 #if defined(ARDUINO_SAM_DUE)
   #include <SPI.h>
