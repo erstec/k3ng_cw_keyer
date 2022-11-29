@@ -1,0 +1,32 @@
+Part     Value          	Device          	Package      	Description                          
+C1       10n            	C-EU050-025X075 	C050-025X075 	CAPACITOR                                              
+C2       10n            	C-EU050-025X075 	C050-025X075 	CAPACITOR                                              
+C3       10n            	C-EU050-025X075 	C050-025X075 	CAPACITOR                                              
+C4       10n            	C-EU050-025X075 	C050-025X075 	CAPACITOR                                              
+C5       4.7n           	C-EU050-025X075 	C050-025X075 	CAPACITOR                                              
+C6       10uf           	CPOL-EUE2,5-6E  	E2,5-6E      	POLARIZED CAPACITOR                                    
+JP1      JP1            	JP1E            	JP1          	JUMPER                                                                  
+LED1     BLUE		        LED5MM          	LED5MM       	LED                                                                     
+LED2     GREEN	          	LED5MM          	LED5MM       	LED                                                                     
+LED3     RED            	LED5MM          	LED5MM       	LED                                                                     
+OK1      PS2501-2,LTV827	PS2501-2,LTV827		DIL08        	OPTO COUPLER                     
+R1       10K            	R-EU_0207/10    	0207/10      	RESISTOR                                               
+R2       390            	R-EU_0207/10    	0207/10      	RESISTOR                                               
+R3       390            	R-EU_0207/10    	0207/10      	RESISTOR                                               
+R4       1K             	R-EU_0207/10    	0207/10      	RESISTOR                                               
+R5       1K             	R-EU_0207/10    	0207/10      	RESISTOR                                               
+R6       1K             	R-EU_0207/10    	0207/10      	RESISTOR                                               
+R7       680            	R-EU_0207/10    	0207/10      	RESISTOR                                               
+R8       680            	R-EU_0207/10    	0207/10      	RESISTOR                                               
+R9       590            	R-EU_0207/10    	0207/10      	RESISTOR                                               
+S1       DTS-6          	DTS-6           	DTS-6        	                                                                        
+S2       DTS-6          	DTS-6           	DTS-6        	                                                                        
+S3       DTS-6          	DTS-6           	DTS-6        	                                                                        
+S4       DTS-6          	DTS-6           	DTS-6        	                                                                        
+SG1      F/CM12P        	F/CM12P         	F/CM12P      	BUZZER Source: Buerklin                               
+SPEEDPOT 100K           	3RP/1610N       	3RP/1610N    	16mm Potentiometer one level                                            
+U1       NANO           	NANO            	NANO         	Arduino                                                                        
+X1       JACK6.3_STEREO 	JACK6.3_STEREO  	JACK6.3      	JACK6.3 STEREO PCB                                                      
+X2       TOBU3          	TOBU3           	TOBU3        	Female Cinch CONNECTOR ( RCA Jack )  
+X3       TOBU3          	TOBU3           	TOBU3        	Female Cinch CONNECTOR ( RCA Jack )   
+X5       Pwr            	KK-156-2        	KK-156-2     	KK 156 HEADER                                        
