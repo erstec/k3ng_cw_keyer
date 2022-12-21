@@ -24,7 +24,7 @@
 #define initial_pot_wpm_high_value 35    // Potentiometer WPM fully CW
 #define wpm_limit_low 5
 #define wpm_limit_high 60
-#define potentiometer_change_threshold 0.9 // don't change the keyer speed until pot wpm has changed more than this
+#define potentiometer_change_threshold 1.0 // don't change the keyer speed until pot wpm has changed more than this
 #define send_buffer_size 150
 #define default_length_letterspace 3
 #define default_length_wordspace 7
@@ -32,7 +32,7 @@
 #define default_first_extension_time 0   // number of milliseconds to extend first sent dit or dah
 #define default_pot_full_scale_reading 1023
 #define default_weighting 50             // 50 = weighting factor of 1 (normal)
-#define default_ptt_hang_time_wordspace_units 0.0
+#define default_ptt_hang_time_wordspace_units 1.0
 #define winkey_c0_wait_time 1            // the number of milliseconds to wait to send 0xc0 byte after send buffer has been sent
 #define winkey_command_timeout_ms 5000
 #define winkey_discard_bytes_startup 3   // this is used if OPTION_WINKEY_DISCARD_BYTES_AT_STARTUP is enabled above
@@ -58,7 +58,7 @@
 #define default_cw_echo_timing_factor 1.75 // "factory default" setting
 #define default_autospace_timing_factor 2.0 // "factory default" setting
 #define winkey_paddle_echo_buffer_decode_timing_factor 0.25
-#define potentiometer_always_on 0
+#define potentiometer_always_on 1
 #define ptt_interlock_check_every_ms 100
 #define ptt_interlock_active_state HIGH
 #define unknown_cw_character '*'
@@ -75,7 +75,7 @@
 #define eeprom_write_time_ms 30000
 
 #ifdef FEATURE_BUTTONS
-  #define analog_buttons_number_of_buttons 4  // includes the command button (command button + 3 memory buttons = 4)
+  #define analog_buttons_number_of_buttons 6  // includes the command button (command button + 3 memory buttons = 4)
   #define analog_buttons_r1 10
   #define analog_buttons_r2 1
 #endif
